@@ -1,16 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: false,
-};
 
-export default nextConfig;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    // Cho phép build thành công ngay cả khi có lỗi ESLint
+    // Tắt kiểm tra lỗi ESLint khi build trên Vercel
     ignoreDuringBuilds: true,
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
